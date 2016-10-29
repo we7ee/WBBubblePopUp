@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'WBBubblePopUp'
   s.version          = '0.1.0'
-s.summary          = 'This is my first "project" on GitHub. \nIt's a easy and really simple PopUp I have made for my project.'
+s.summary          = 'This is my first project on GitHub. Its a easy and really simple PopUp I have made for my project.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,15 +17,13 @@ s.summary          = 'This is my first "project" on GitHub. \nIt's a easy and re
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'Simple bubble popup'
 
   s.homepage         = 'https://github.com/we7ee/WBBubblePopUp'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Willy Breitenbach' => 'willyb@live.de' }
-  s.source           = { :git => 'https://github.com/we7ee/WBBubblePopUp.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/we7ee/WBBubblePopUp.git', :tag => '0.1.0' }
   # s.social_media_url = 'https://twitter.com/we7ee'
 
   s.ios.deployment_target = '8.0'
