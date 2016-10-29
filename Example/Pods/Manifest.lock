@@ -1,0 +1,16 @@
+PODS:
+  - WBBubblePopUp (0.1.0)
+
+DEPENDENCIES:
+  - WBBubblePopUp (from `../`)
+
+EXTERNAL SOURCES:
+  WBBubblePopUp:
+    :path: ../
+
+SPEC CHECKSUMS:
+  WBBubblePopUp: b14a80234c54489e2d9c2b2ce7abe2578aec397e
+
+PODFILE CHECKSUM: 5044aed652b5a3f8b086f06cab710d887c2dce0c
+
+COCOAPODS: 1.1.1
