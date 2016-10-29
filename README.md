@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/WBBubblePopUp.svg?style=flat)](http://cocoapods.org/pods/WBBubblePopUp)
 [![Platform](https://img.shields.io/cocoapods/p/WBBubblePopUp.svg?style=flat)](http://cocoapods.org/pods/WBBubblePopUp)
 
+A easy and really simple PopUp I have made for my project.
+
 # Screenshot
 #![WBBubblePopUp](/WBBubblePopUp/Assets/screenshot.gif)
 

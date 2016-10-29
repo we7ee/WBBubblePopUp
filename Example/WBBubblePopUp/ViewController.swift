@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 
     @IBAction func showBlueBubble(_ sender: UIButton) {
         let bubble = WBBubblePopUp()
-        bubble.timeToDisappear = 2
+        bubble.timeToDisappear = 1
         bubble.setText("This is a blue Bubble")
         bubble.setColorBackground(.blue)
         
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     }
     @IBAction func showRedBubble(_ sender: UIButton) {
         let bubble = WBBubblePopUp()
-        bubble.timeToDisappear = 2
+        bubble.timeToDisappear = 1
         bubble.setText("This is a red Bubble")
         bubble.setColorBackground(.red)
         
