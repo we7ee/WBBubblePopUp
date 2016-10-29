@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0FBC122B7A419C6680D65F30C7126823 /* Pods-WBBubblePopUp_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FED6FC3C2F20A0AC2DDABC40B551AEF /* Pods-WBBubblePopUp_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13D89EDF807EE325047E046CE46E0EF5 /* WBBubblePopUp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC61EE495A7DE2F7766FED5BAA1A27D4 /* WBBubblePopUp-dummy.m */; };
 		34ED8244F00731F7D7A216B91CD6C6EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		3906F7AD0BBE91108C3AB11D6470C54D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5430DF0AB9846BC9E563B45D8926A8F6 /* WBBubblePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827E075B8E99011508F5AEAF88DD4CEB /* WBBubblePopUp.swift */; };
 		673406CE9E4A410D134039C4E9ACA567 /* Pods-WBBubblePopUp_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5316B8BC88E35B0A95C624EEC67309AC /* Pods-WBBubblePopUp_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C4E9615123F4C0B03E45906864C65E3 /* Pods-WBBubblePopUp_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8E30E56D231B01C92A5E9F5FBDBE2B /* Pods-WBBubblePopUp_Tests-dummy.m */; };
-		76E440DDDA887412C59D627D78D5E337 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862558F81902F5F4435BCC0FC5FE626 /* ReplaceMe.swift */; };
 		8EFF4D345F72CCFA6B19E8B9A9FA023D /* WBBubblePopUp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC83B25505DAF408CBEB2D29C3277850 /* WBBubblePopUp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A18A10AC9874651BFFD76A88A6729C7F /* Pods-WBBubblePopUp_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8221B30E937BEF43CF8B38634F66C18E /* Pods-WBBubblePopUp_Example-dummy.m */; };
-		BC582B45E9C9A7C566E0C3301379A308 /* WBBubblePopUp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC61EE495A7DE2F7766FED5BAA1A27D4 /* WBBubblePopUp-dummy.m */; };
 		F9EC71ACB7624D0BD5004BAB0E865C2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,6 @@
 /* Begin PBXFileReference section */
 		0025A5DCA0997D0E1A4A3B36A8FFF3B7 /* WBBubblePopUp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBBubblePopUp-prefix.pch"; sourceTree = "<group>"; };
 		09EFA3992BD74560F36CD9D1DA838F47 /* Pods-WBBubblePopUp_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WBBubblePopUp_Tests-resources.sh"; sourceTree = "<group>"; };
-		1862558F81902F5F4435BCC0FC5FE626 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		1F156479B407B59082CE997A55E6ED8F /* Pods-WBBubblePopUp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBBubblePopUp_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1FBCF71550677C9E4AF55AFC5B8C5244 /* Pods-WBBubblePopUp_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WBBubblePopUp_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		22A822042E107F99D1E2BB390FE396BE /* Pods-WBBubblePopUp_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WBBubblePopUp_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		72196D9E4038B3CD7E3129EC88187BD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		753A9531BAC509868A76B8FD7A423F90 /* Pods-WBBubblePopUp_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WBBubblePopUp_Example-resources.sh"; sourceTree = "<group>"; };
 		8221B30E937BEF43CF8B38634F66C18E /* Pods-WBBubblePopUp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WBBubblePopUp_Example-dummy.m"; sourceTree = "<group>"; };
+		827E075B8E99011508F5AEAF88DD4CEB /* WBBubblePopUp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WBBubblePopUp.swift; sourceTree = "<group>"; };
 		8FED6FC3C2F20A0AC2DDABC40B551AEF /* Pods-WBBubblePopUp_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WBBubblePopUp_Example-umbrella.h"; sourceTree = "<group>"; };
 		92B6CB9273894F9D68C6978697DBB133 /* Pods-WBBubblePopUp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBBubblePopUp_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -137,6 +137,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6E97DBC74F95CF5603141BCD57F4407B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				827E075B8E99011508F5AEAF88DD4CEB /* WBBubblePopUp.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,14 +182,6 @@
 			path = "Target Support Files/Pods-WBBubblePopUp_Example";
 			sourceTree = "<group>";
 		};
-		ADD0B55CC4CBF512E67A106679B43F6E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				1862558F81902F5F4435BCC0FC5FE626 /* ReplaceMe.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +207,7 @@
 		ED892EA49B901FFDC92F48A2962ADB6F /* WBBubblePopUp */ = {
 			isa = PBXGroup;
 			children = (
-				ADD0B55CC4CBF512E67A106679B43F6E /* Classes */,
+				6E97DBC74F95CF5603141BCD57F4407B /* Classes */,
 			);
 			path = WBBubblePopUp;
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6281D8F350FD1F0AAB806BB50FD9AA1C /* Build configuration list for PBXNativeTarget "WBBubblePopUp" */;
 			buildPhases = (
-				6AAE7FB1C99C24A6D81269639CB960AC /* Sources */,
+				5A1411094137EA0F736BE6C4958696EC /* Sources */,
 				F2E4E7EF22F869F5D5D19B8FA7D6416C /* Frameworks */,
 				828643BEA53B6CCE761314D9C1266B8D /* Headers */,
 			);
@@ -333,12 +333,12 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6AAE7FB1C99C24A6D81269639CB960AC /* Sources */ = {
+		5A1411094137EA0F736BE6C4958696EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E440DDDA887412C59D627D78D5E337 /* ReplaceMe.swift in Sources */,
-				BC582B45E9C9A7C566E0C3301379A308 /* WBBubblePopUp-dummy.m in Sources */,
+				13D89EDF807EE325047E046CE46E0EF5 /* WBBubblePopUp-dummy.m in Sources */,
+				5430DF0AB9846BC9E563B45D8926A8F6 /* WBBubblePopUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
