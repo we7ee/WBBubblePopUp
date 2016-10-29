@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'WBBubblePopUp'
   s.version          = '0.1.0'
-s.summary          = 'A easy and really simple PopUp I have made for my project.'
+  s.summary          = 'A easy and really simple PopUp I have made for my project.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
