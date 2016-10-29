@@ -22,7 +22,7 @@ pod "WBBubblePopUp"
 
 ## Author
 
-Willy Breitenbach, willyb@live.de
+Willy Breitenbach, brwilly@me.com
 
 ## License
 
