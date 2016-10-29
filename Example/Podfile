@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WBBubblePopUp_Example' do
+  pod 'WBBubblePopUp', :path => '../'
+
+  target 'WBBubblePopUp_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
