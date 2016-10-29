@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/WBBubblePopUp.svg?style=flat)](http://cocoapods.org/pods/WBBubblePopUp)
 [![Platform](https://img.shields.io/cocoapods/p/WBBubblePopUp.svg?style=flat)](http://cocoapods.org/pods/WBBubblePopUp)
 
+# Screenshot
+![WBBubblePopUp](https://raw.githubusercontent.com/we7ee/WBBubblePopUp/WBBubblePopUp/Assets/screenshot.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
