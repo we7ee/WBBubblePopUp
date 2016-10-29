@@ -1,21 +1,57 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="WBBubblePopUp_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1R9-X0-ffd">
+                                <rect key="frame" x="111" y="318" width="153" height="30"/>
+                                <state key="normal" title="Show me a red bubble"/>
+                                <connections>
+                                    <action selector="showRedBubble:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="T8p-q0-aNb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xl-cK-4pZ">
+                                <rect key="frame" x="4" y="356" width="367" height="30"/>
+                                <state key="normal" title="Show me a bubble with a really unnecessary long text"/>
+                                <connections>
+                                    <action selector="showBubbleLongTxt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X85-Nb-hds"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTA-UH-VPi">
+                                <rect key="frame" x="107" y="280" width="160" height="30"/>
+                                <state key="normal" title="Show me a blue bubble"/>
+                                <connections>
+                                    <action selector="showBlueBubble:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gdI-Jz-GIZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1R9-X0-ffd" firstAttribute="top" secondItem="mTA-UH-VPi" secondAttribute="bottom" constant="8" id="7Qb-8H-Skv"/>
+                            <constraint firstItem="1R9-X0-ffd" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Cm6-7i-Zn6"/>
+                            <constraint firstItem="5Xl-cK-4pZ" firstAttribute="top" secondItem="1R9-X0-ffd" secondAttribute="bottom" constant="8" id="F1A-cv-xW8"/>
+                            <constraint firstItem="5Xl-cK-4pZ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="aoe-d3-WVw"/>
+                            <constraint firstItem="mTA-UH-VPi" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="b0h-k6-0bC"/>
+                            <constraint firstItem="1R9-X0-ffd" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="uTt-Gq-qhM"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
