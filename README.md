@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/WBBubblePopUp.svg?style=flat)](http://cocoapods.org/pods/WBBubblePopUp)
 
 # Screenshot
-![WBBubblePopUp](https://raw.githubusercontent.com/we7ee/WBBubblePopUp/WBBubblePopUp/Assets/screenshot.gif)
+![WBBubblePopUp](https://raw.githubusercontent.com/we7ee/WBBubblePopUp/Assets/screenshot.gif)
 
 ## Example
 
