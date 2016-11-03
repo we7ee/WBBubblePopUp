@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/we7ee/WBBubblePopUp'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Willy Breitenbach' => 'brwilly@me.com' }
-  s.source           = { :git => 'https://github.com/we7ee/WBBubblePopUp.git', :tag => '0.1.1' }
+  s.source           = { :git => 'https://github.com/we7ee/WBBubblePopUp.git', :tag => '0.1.2' }
   s.social_media_url = 'https://twitter.com/we7ee'
 
   s.ios.deployment_target = '8.0'

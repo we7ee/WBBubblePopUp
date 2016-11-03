@@ -24,8 +24,6 @@ or
 WBBubblePopUp().showCostumBubble(presentingView: self.view, text: bubbleTxt, bckColor: .blue, duration: 2)
 ```
 
-
-
 ## Installation
 
 WBBubblePopUp is available through [CocoaPods](http://cocoapods.org). To install
