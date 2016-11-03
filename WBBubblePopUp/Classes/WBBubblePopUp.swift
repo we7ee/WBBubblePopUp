@@ -31,11 +31,11 @@ import UIKit
 open class WBBubblePopUp: UIView {
     
     // private properties
-    
     var popUpLabel : UILabel! // Label
-    //
-    // public properties
-    public var timeToDisappear = 2.0   // Default time to disappear
+    var timeToDisappear = 2.0   // Default time to disappear
+    var colorBackground : UIColor = .blue
+    var colorText : UIColor = .white
+    var cornerRadius : CGFloat = 15
     
     override init(frame : CGRect){
         super.init(frame: frame)
@@ -48,11 +48,11 @@ open class WBBubblePopUp: UIView {
     convenience init() {
         // init with frame, set background color and corner radius
         self.init(frame: CGRect(x: 0, y: 70, width: 30, height: 30))
-        super.backgroundColor = UIColor.blue
-        super.layer.cornerRadius = 15
+        self.backgroundColor = colorBackground
+        self.layer.cornerRadius = cornerRadius
         
         popUpLabel = UILabel(frame: CGRect(origin: CGPoint(x: 10,y: 5), size: CGSize(width: 100, height: 30)))
-        popUpLabel.textColor = .white
+        popUpLabel.textColor = colorText
         popUpLabel.textAlignment = .center
         popUpLabel.lineBreakMode = .byWordWrapping
         
@@ -63,34 +63,34 @@ open class WBBubblePopUp: UIView {
     // show default bubble
     open func showDefaultBubble(presentingView: UIView, text: String){
         
-        let bubble = WBBubblePopUp()
-        bubble.setText(text)
+        setText(text)
         
-        presentingView.addSubview(bubble)
+        updateFrame()
+        presentingView.addSubview(self)
     }
     
     // show bubble with costum background color and duration time
     open func showCostumBubble(presentingView: UIView, text: String, bckColor: UIColor, duration: Double){
         
-        let bubble = WBBubblePopUp()
-        bubble.setText(text)
-        bubble.setColorBackground(bckColor)
-        bubble.timeToDisappear = duration
+        setText(text)
+        colorBackground = bckColor
+        self.timeToDisappear = duration
         
-        presentingView.addSubview(bubble)
+        updateFrame()
+        presentingView.addSubview(self)
     }
     
     // show costum bubble
     open func showCostumBubble(presentingView: UIView, text: String, bckColor: UIColor, txtColor: UIColor, duration: Double, cornerRadius: CGFloat){
         
-        let bubble = WBBubblePopUp()
-        bubble.setText(text)
-        bubble.setColorBackground(bckColor)
-        bubble.setColorText(txtColor)
-        bubble.timeToDisappear = duration
-        bubble.setCornerRadius(cornerRadius)
+        setText(text)
+        colorText = txtColor
+        colorBackground = bckColor
+        self.cornerRadius = cornerRadius
+        self.timeToDisappear = duration
         
-        presentingView.addSubview(bubble)
+        updateFrame()
+        presentingView.addSubview(self)
     }
     
     // set text of bubble
@@ -103,23 +103,13 @@ open class WBBubblePopUp: UIView {
         showAnimated()
     }
     
-    // set background color of bubble
-    func setColorBackground(_ color: UIColor){
-        super.backgroundColor = color
-    }
-    
-    // set text color
-    func setColorText(_ color: UIColor){
-        popUpLabel.textColor = color
-    }
-    
-    // set corner radius of bubble
-    func setCornerRadius(_ radius: CGFloat){
-        super.layer.cornerRadius = radius
-    }
-    
     // update size of buuble frame and text frame
     func updateFrame(){
+        
+        self.backgroundColor = colorBackground
+        self.layer.cornerRadius = cornerRadius
+        popUpLabel.textColor = colorText
+        
         let screenSize = UIScreen.main.bounds
         
         // line of text wider than screen
