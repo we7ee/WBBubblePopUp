@@ -60,7 +60,7 @@ open class WBBubblePopUp: UIView {
         self.addSubview(popUpLabel)
     }
     
-    
+    // show default bubble
     open func showDefaultBubble(presentingView: UIView, text: String){
         
         let bubble = WBBubblePopUp()
@@ -69,6 +69,7 @@ open class WBBubblePopUp: UIView {
         presentingView.addSubview(bubble)
     }
     
+    // show bubble with costum background color and duration time
     open func showCostumBubble(presentingView: UIView, text: String, bckColor: UIColor, duration: Double){
         
         let bubble = WBBubblePopUp()
@@ -79,6 +80,7 @@ open class WBBubblePopUp: UIView {
         presentingView.addSubview(bubble)
     }
     
+    // show costum bubble
     open func showCostumBubble(presentingView: UIView, text: String, bckColor: UIColor, txtColor: UIColor, duration: Double, cornerRadius: CGFloat){
         
         let bubble = WBBubblePopUp()
@@ -152,10 +154,6 @@ open class WBBubblePopUp: UIView {
             DispatchQueue.main.asyncAfter(deadline: .now() + self.timeToDisappear) { // in half a second...
                 self.removeAnimated()
             }
-            //                DispatchQueue.asyncAfter(delayTime)
-            //                dispatch_after(delayTime, DispatchQueue.main) {
-            //                    self.removeAnimated()
-            //                }
         })
     }
     

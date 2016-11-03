@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     
-        WBBubblePopUp().showDefaultBubble(presentingView:self.view, text:"TEST")
+        WBBubblePopUp().showDefaultBubble(presentingView:self.view, text:"Hello")
     }
 
     override func didReceiveMemoryWarning() {

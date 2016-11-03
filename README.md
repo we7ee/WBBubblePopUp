@@ -14,7 +14,17 @@ A easy and really simple PopUp I have made for my project.
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Usage
+
+```
+WBBubblePopUp().showDefaultBubble(presentingView:self.view, text:"Hello")
+```
+or
+```
+WBBubblePopUp().showCostumBubble(presentingView: self.view, text: bubbleTxt, bckColor: .blue, duration: 2)
+```
+
+
 
 ## Installation
 
