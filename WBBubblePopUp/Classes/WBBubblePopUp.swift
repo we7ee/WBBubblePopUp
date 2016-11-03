@@ -60,8 +60,39 @@ open class WBBubblePopUp: UIView {
         self.addSubview(popUpLabel)
     }
     
+    
+    open func showDefaultBubble(presentingView: UIView, text: String){
+        
+        let bubble = WBBubblePopUp()
+        bubble.setText(text)
+        
+        presentingView.addSubview(bubble)
+    }
+    
+    open func showCostumBubble(presentingView: UIView, text: String, bckColor: UIColor, duration: Double){
+        
+        let bubble = WBBubblePopUp()
+        bubble.setText(text)
+        bubble.setColorBackground(bckColor)
+        bubble.timeToDisappear = duration
+        
+        presentingView.addSubview(bubble)
+    }
+    
+    open func showCostumBubble(presentingView: UIView, text: String, bckColor: UIColor, txtColor: UIColor, duration: Double, cornerRadius: CGFloat){
+        
+        let bubble = WBBubblePopUp()
+        bubble.setText(text)
+        bubble.setColorBackground(bckColor)
+        bubble.setColorText(txtColor)
+        bubble.timeToDisappear = duration
+        bubble.setCornerRadius(cornerRadius)
+        
+        presentingView.addSubview(bubble)
+    }
+    
     // set text of bubble
-    open func setText(_ text: String){
+    func setText(_ text: String){
         
         popUpLabel.text = text
         popUpLabel.sizeToFit()
@@ -71,17 +102,17 @@ open class WBBubblePopUp: UIView {
     }
     
     // set background color of bubble
-    open func setColorBackground(_ color: UIColor){
+    func setColorBackground(_ color: UIColor){
         super.backgroundColor = color
     }
     
     // set text color
-    open func setColorText(_ color: UIColor){
+    func setColorText(_ color: UIColor){
         popUpLabel.textColor = color
     }
     
     // set corner radius of bubble
-    open func setCornerRadius(_ radius: CGFloat){
+    func setCornerRadius(_ radius: CGFloat){
         super.layer.cornerRadius = radius
     }
     
@@ -139,4 +170,7 @@ open class WBBubblePopUp: UIView {
             self.removeFromSuperview()
         })
     }
+    
+    
+    
 }

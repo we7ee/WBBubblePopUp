@@ -14,13 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        let bubble = WBBubblePopUp()
-        bubble.timeToDisappear = 2
-        bubble.setText("Hello")
-        bubble.setColorBackground(.blue)
-        
-        self.view.addSubview(bubble)
+    
+        WBBubblePopUp().showDefaultBubble(presentingView:self.view, text:"TEST")
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,28 +24,22 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showBlueBubble(_ sender: UIButton) {
-        let bubble = WBBubblePopUp()
-        bubble.timeToDisappear = 1
-        bubble.setText("This is a blue Bubble")
-        bubble.setColorBackground(.blue)
         
-        self.view.addSubview(bubble)
+        let bubbleTxt = "This is a blue Bubble"
+        
+        WBBubblePopUp().showCostumBubble(presentingView: self.view, text: bubbleTxt, bckColor: .blue, duration: 2)
     }
     @IBAction func showRedBubble(_ sender: UIButton) {
-        let bubble = WBBubblePopUp()
-        bubble.timeToDisappear = 1
-        bubble.setText("This is a red Bubble")
-        bubble.setColorBackground(.red)
+
+        let bubbleTxt = "This is a red Bubble"
         
-        self.view.addSubview(bubble)
+        WBBubblePopUp().showCostumBubble(presentingView: self.view, text: bubbleTxt, bckColor: .red, duration: 2)
     }
     @IBAction func showBubbleLongTxt(_ sender: UIButton) {
-        let bubble = WBBubblePopUp()
-        bubble.timeToDisappear = 2
-        bubble.setText("I told you this is a really long text. Now you have to read this.")
-        bubble.setColorBackground(.blue)
         
-        self.view.addSubview(bubble)
+        let bubbleTxt = "I told you this is a really long text. Now you have to read this."
+        
+        WBBubblePopUp().showCostumBubble(presentingView: self.view, text: bubbleTxt, bckColor: .blue, duration: 2)
     }
 }
 
