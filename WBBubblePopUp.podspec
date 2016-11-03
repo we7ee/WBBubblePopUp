@@ -3,9 +3,7 @@ Pod::Spec.new do |s|
   s.version          = '0.1.0'
   s.summary          = 'A easy and really simple PopUp I have made for my project.'
 
-  s.description      =  <<-DESC
-                        This is my first project on GitHub. Its a simple bubble popup
-                        DESC
+  s.description      = 'This is my first project on GitHub. Its a simple bubble popup'
 
   s.homepage         = 'https://github.com/we7ee/WBBubblePopUp'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
