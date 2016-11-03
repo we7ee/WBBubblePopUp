@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'WBBubblePopUp'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A easy and really simple PopUp I have made for my project.'
 
   s.description      = 'This is my first project on GitHub. Its a simple bubble popup'
