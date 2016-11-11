@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     @IBAction func showRedBubble(_ sender: UIButton) {
 
         let bubbleTxt = "This is a red Bubble"
-        
+
         WBBubblePopUp().showCostumBubble(presentingView: self.view, text: bubbleTxt, bckColor: .red, duration: 2)
     }
     @IBAction func showBubbleLongTxt(_ sender: UIButton) {

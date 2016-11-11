@@ -51,11 +51,11 @@ open class WBBubblePopUp: UIView {
         self.backgroundColor = colorBackground
         self.layer.cornerRadius = cornerRadius
         
-        popUpLabel = UILabel(frame: CGRect(origin: CGPoint(x: 10,y: 5), size: CGSize(width: 100, height: 30)))
-        popUpLabel.textColor = colorText
-        popUpLabel.textAlignment = .center
-        popUpLabel.lineBreakMode = .byWordWrapping
         
+        self.popUpLabel = UILabel(frame: CGRect(origin: CGPoint(x: 10,y: 5), size: CGSize(width: 100, height: 30)))
+        self.popUpLabel.textColor = colorText
+        self.popUpLabel.textAlignment = .center
+        self.popUpLabel.lineBreakMode = .byWordWrapping
         
         self.addSubview(popUpLabel)
     }
@@ -63,60 +63,60 @@ open class WBBubblePopUp: UIView {
     // show default bubble
     open func showDefaultBubble(presentingView: UIView, text: String){
         
-        setText(text)
+        //setText(text)
         
-        updateFrame()
-        presentingView.addSubview(self)
+        updateFrame(withText: text)
+        //presentingView.addSubview(self)
+        showAnimated(presentigView: presentingView)
     }
     
     // show bubble with costum background color and duration time
     open func showCostumBubble(presentingView: UIView, text: String, bckColor: UIColor, duration: Double){
         
-        setText(text)
+        //setText(text)
         colorBackground = bckColor
         self.timeToDisappear = duration
         
-        updateFrame()
-        presentingView.addSubview(self)
+        updateFrame(withText: text)
+        //presentingView.addSubview(self)
+        showAnimated(presentigView: presentingView)
     }
     
     // show costum bubble
     open func showCostumBubble(presentingView: UIView, text: String, bckColor: UIColor, txtColor: UIColor, duration: Double, cornerRadius: CGFloat){
         
-        setText(text)
+        //setText(text)
         colorText = txtColor
         colorBackground = bckColor
         self.cornerRadius = cornerRadius
         self.timeToDisappear = duration
         
-        updateFrame()
+        updateFrame(withText: text)
         presentingView.addSubview(self)
     }
     
-    // set text of bubble
-    func setText(_ text: String){
+    // TODO: Remove bubble view
+    open func dismiss(){
         
-        popUpLabel.text = text
-        popUpLabel.sizeToFit()
-        
-        updateFrame()
-        showAnimated()
     }
-    
+
     // update size of buuble frame and text frame
-    func updateFrame(){
+    func updateFrame(withText: String){
+        
+        popUpLabel.text = withText
+        popUpLabel.sizeToFit()
         
         self.backgroundColor = colorBackground
         self.layer.cornerRadius = cornerRadius
-        popUpLabel.textColor = colorText
+        self.popUpLabel.textColor = colorText
         
         let screenSize = UIScreen.main.bounds
         
         // line of text wider than screen
         if self.popUpLabel.frame.size.width+20 >= screenSize.width {
-            popUpLabel.numberOfLines = 0
-            popUpLabel.frame.size.width = screenSize.width-40
-            popUpLabel.sizeToFit()
+            self.popUpLabel.numberOfLines = 0
+            self.popUpLabel.frame.size.width = screenSize.width-40
+            self.popUpLabel.sizeToFit()
             self.frame.size.width = screenSize.width-20
             self.frame.size.height = (self.popUpLabel.frame.size.height) + 10
         }
@@ -124,13 +124,13 @@ open class WBBubblePopUp: UIView {
             self.frame.size.width = self.popUpLabel.frame.size.width+20
             self.frame.size.height = self.popUpLabel.frame.size.height+10
         }
-        
-        
         self.frame.origin = CGPoint(x: screenSize.width/2-self.frame.size.width/2, y: 70)
     }
     
     // animate up to down
-    func showAnimated(){
+    func showAnimated(presentigView: UIView){
+        
+        presentigView.addSubview(self)
         
         self.frame.origin.y = -50
         
@@ -139,8 +139,6 @@ open class WBBubblePopUp: UIView {
         }, completion: {
             (value: Bool) in
             
-            let _ = DispatchTime(uptimeNanoseconds: UInt64(Int64(self.timeToDisappear * Double(NSEC_PER_SEC))))
-            //let delayTime = DispatchTime.now(DispatchTime.now, Int64(self.timeToDisappear * Double(NSEC_PER_SEC)))
             DispatchQueue.main.asyncAfter(deadline: .now() + self.timeToDisappear) { // in half a second...
                 self.removeAnimated()
             }
@@ -158,7 +156,4 @@ open class WBBubblePopUp: UIView {
             self.removeFromSuperview()
         })
     }
-    
-    
-    
 }
