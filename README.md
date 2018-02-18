@@ -7,7 +7,7 @@
 A easy and really simple PopUp I have made for my project.
 
 # Screenshot
-#![WBBubblePopUp](/WBBubblePopUp/Assets/screenshot.gif)
+![WBBubblePopUp](/WBBubblePopUp/Assets/screenshot.gif)
 
 ## Example
 
